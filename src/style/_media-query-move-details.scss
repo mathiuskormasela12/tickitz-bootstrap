@@ -1,0 +1,7 @@
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  div#movie-details {
+    [type="date"] {
+      background:#fff url('../assets/images/calendar.svg')  2% 50% no-repeat ;
+    }
+  }
+}

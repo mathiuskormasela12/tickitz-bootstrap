@@ -1,0 +1,114 @@
+@media screen and (max-width: 600px) {
+  div#forgot {
+    img.img-tickitz {
+      width: 10rem;
+    }
+  
+    .hero-head > .col-xl-5{
+      height: 100vh !important;
+      padding: 12.5rem 0;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .text-description {
+      width: 100%;
+    }
+  
+    .input-active, .btn-active {
+      height: 2.8rem;
+    }
+  
+    .btn.btn-active {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  div#forgot {
+    .input-active, .btn-active {
+      height: 2.5rem;
+      padding-left: .5rem;
+    }
+    .btn.btn-active {
+      padding: 0;
+    }
+    ::placeholder {
+      font-size: .8rem;
+    }
+    .col-xl-5.col-lg-5.col-sm-12.col-md-12 {
+      min-height: 100vh !important;
+      padding: 5.8rem 0;
+      box-sizing: content-box;
+    }
+    .col-xl-7.col-lg-7.col-sm-12.col-md-12 {
+      min-height: 100vh !important;
+      padding: 5.8rem 0;
+      box-sizing: content-box;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 968px) {
+  div#forgot {
+    .input-active, .btn-active {
+      height: 3.2rem;
+    }
+    .btn.btn-active {
+      padding: 0;
+    }
+    .text-description {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 968px) and (orientation: landscape){
+  div#forgot {
+    .col-xl-5.col-lg-5.col-sm-12.col-md-12 {
+      min-height: 100vh !important;
+      padding: 3.8rem 0;
+      box-sizing: content-box;
+    }
+    .col-xl-7.col-lg-7.col-sm-12.col-md-12 {
+      min-height: 100vh !important;
+      padding: 2rem 0;
+      box-sizing: content-box;
+    }
+    .col-xl-7.col-lg-7.col-sm-12.col-md-12 > .container > .row > .col-xl-12:last-child {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1200px) {
+  div#forgot {
+    .input-active, .btn-active {
+      height: 2.9rem;
+    }
+    .container {
+      width: 90%;
+    }
+    .btn.btn-active {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1580px) {
+  div#forgot {
+    img.img-tickitz {
+      width: 20rem;
+    }
+    .container {
+      width: 95% !important;
+    }
+    .btn.btn-active {
+      padding: 0;
+    }
+  }
+}
+

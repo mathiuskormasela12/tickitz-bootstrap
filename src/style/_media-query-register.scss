@@ -1,0 +1,192 @@
+@media screen and (max-width: 600px) {
+  div#register {
+    img.img-tickitz {
+      width: 15rem;
+    }
+  
+    .hero-head > .col-xl-5{
+      padding: 2.5rem 0;
+      height: auto !important;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .text-description {
+      width: 100%;
+    }
+  
+    .input-signup, .btn.btn-signup, .btn.btn-google, .btn.btn-facebook {
+      height: 2.8rem;
+      font-size: 1.1rem;
+    }
+  
+    .btn.btn-signup {
+      padding: 0;
+    }
+  
+    .btn-google {
+      margin-bottom: 1rem;
+    }
+  
+    div.img-eye {
+      bottom: .8rem;
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  div#register {
+    .input-signup, .btn-signup, .btn.btn-google, .btn.btn-facebook {
+      height: 2.5rem;
+      padding-left: .5rem;
+    }
+  
+    .btn.btn-signup {
+      padding: 0;
+    }
+  
+    ::placeholder {
+      font-size: .8rem;
+    }
+  
+    img.img-tickitz {
+      width: 10rem;
+    }
+  
+    img.img-google, img.img-facebook {
+      position: static;
+    }
+  
+    img.img-google {
+      margin-right: 1rem;
+    }
+  
+    img.img-facebook {
+      margin-right: .5rem;
+    }
+  
+    div.img-eye {
+      right: .9rem;
+      bottom: .7rem;
+      width: 1rem;
+    }
+  
+    .btn-google {
+      margin-bottom: 1rem;
+    }
+  
+    .hero > .container-fluid > .hero-head > .col-xl-7 {
+      box-sizing: content-box;
+      min-height: 100vh;
+      padding: 3.5rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  div#register {
+    .btn-google {
+      margin-bottom: 1rem;
+    }
+    .text-description {
+      width: 100%;
+    }
+    div.hero > section.container-fluid > .hero-head > .col-xl-5 {
+      height: auto;
+      padding: 2rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: landscape){
+  div#register {
+    .btn-google {
+      margin-bottom: 0;
+    }
+    div.hero > .container-fluid > .row > .col-xl-7.col-lg-7.col-sm-12.col-md-12 {
+      min-height: 100%;
+      padding: 3.5rem 0;
+      box-sizing: content-box;
+    }
+    div.hero > .container-fluid > .row >.col-xl-5.col-lg-5.col-sm-12.col-md-12 {
+      height: auto;
+      padding: 3.5rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  div#register {
+    .input-signup, .btn-signup, .btn.btn-google, .btn.btn-facebook {
+      height: 3.2rem;
+    }
+    .hero-head > .col-xl-5 {
+      padding: 7.5rem 0;
+      height: auto !important;
+    }
+    div.img-eye {
+      bottom: 1rem;
+      right: 1.2rem;
+    }
+    .btn.btn-signup {
+      padding: 0;
+    }
+    .btn-google {
+      margin-bottom: 1rem;
+    }
+    .text-description {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 968px) and (orientation: landscape) {
+  div#register {
+    .btn-google {
+      margin-bottom: 0;
+    }
+    .hero > .container-fluid > .hero-head > .col-xl-7 {
+      box-sizing: content-box;
+      min-height: 100vh;
+      padding: 8.5rem 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 968px) and (max-width: 1200px) {
+  div#register {
+    .input-signup, .btn-signup, .btn.btn-google, .btn.btn-facebook {
+      height: 2.9rem;
+    }
+    .container {
+      width: 90%;
+    }
+    div.img-eye {
+      bottom: .8rem;
+      right: 1.2rem;
+    }
+    .btn.btn-signup {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1580px) {
+  div#register {
+    img.img-tickitz {
+      width: 20rem;
+    }
+    img.img-facebook {
+      left: .9rem;
+    }
+    .container {
+      width: 95% !important;
+    }
+    .btn.btn-signup {
+      padding: 0;
+    }
+  }
+}

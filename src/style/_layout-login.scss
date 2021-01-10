@@ -1,0 +1,139 @@
+div#login {
+  div.hero {
+    height: 100vh;
+    background-color: white;
+  
+    section.container-fluid {
+      height: 100%;
+  
+      .hero-head {
+        height: 100%;
+        
+        .col-xl-7 {
+          background: linear-gradient(
+          $primary-rgba,
+          $primary-rgba
+          ), url('../assets/images/background.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          .row {
+            height: 100%;
+  
+            h3.text-white {
+              letter-spacing: .1rem;
+            }
+          }
+        }
+  
+        .col-xl-5 {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  
+  .container {
+    width: 80%;
+  }
+  
+  .img-tickitz {
+    max-width: 25rem;
+  }
+  
+  .form-title {
+    color: #121212;
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    color: #AAAAAA;
+  }
+  
+  .btn-signin{
+    background-color: $primary-hex;
+    outline-color: $primary-hex !important;
+    border-color: $primary-hex !important;
+    box-shadow: none !important;
+    height: 3.1rem;
+    color: white;
+    transition: opacity .5s;
+    padding: 0;
+  }
+  
+  .btn-signin:hover {
+    background-color: $primary-hex;
+    color: white;
+    opacity: 0.5;
+  }
+  
+  .text-label {
+    color: $text-form;
+  }
+  
+  .input-signin {
+    height: 3.1rem;
+    box-shadow:none !important;
+    outline: none !important;
+    padding-left: 1.3rem;
+  }
+  
+  .input-signin:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: $primary-hex;
+  }
+  
+  a.text-reset {
+    letter-spacing: .1rem;
+    color: $primary-hex !important;
+  }
+  
+  .forgot-col {
+    color: #AAAAAA;
+  }
+  
+  ::placeholder {
+    color:#A0A3BD !important;
+  }
+  
+  .btn.btn-facebook, .btn.btn-google {
+    position: relative;
+    height: 3.1rem;
+    color: #A0A3BD;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border: none;
+    width: 100%;
+    transition: opacity .5s;
+  }
+  
+  .btn.btn-google:hover, .btn.btn-facebook:hover {
+    background-color: white;
+    color: #A0A3BD;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    opacity: 0.5;
+  }
+  
+  img.img-facebook, img.img-google {
+    position: absolute;
+    left: 1rem;
+  }
+  
+  div.img-eye {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    bottom: .9rem;
+  }
+  
+  hr.hr {
+    width: 100%;
+    color: #AAAAAA;
+  }
+  
+  .text-or {
+    color: #AAAAAA;
+  }
+}

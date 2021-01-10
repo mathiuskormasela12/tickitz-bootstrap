@@ -1,0 +1,143 @@
+div#forgot {
+  div.hero {
+    height: 100vh;
+    background-color: white;
+  
+    section.container-fluid {
+      height: 100%;
+  
+      .hero-head {
+        height: 100%;
+        
+        .col-xl-7 {
+          background: linear-gradient(
+          $primary-rgba,
+          $primary-rgba
+          ), url('../assets/images/background.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          .row {
+            height: 100%;
+  
+            h3.text-white {
+              letter-spacing: .1rem;
+            }
+          }
+        }
+  
+        .col-xl-5 {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  
+  .container {
+    width: 80%;
+  }
+  
+  .bullets {
+    display: inline-block;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bullets-transparent {
+    color: white;
+    background-color: transparent;
+  }
+  
+  .bullets-white {
+    color: #290341;
+    background-color: white;
+  }
+  
+  .text-gray {
+    color: #8692A6;
+  }
+  
+  .text-description {
+    color: #8694ac;
+    width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .hero-head > .col-xl-7 > .container {
+    height: 100%;
+  }
+  
+  .hero-head-row {
+    height: 100%;
+  }
+  
+  .img-tickitz {
+    max-width: 15rem;
+  }
+  
+  .form-title {
+    color: #121212;
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    color: #AAAAAA;
+  }
+  
+  .btn-active{
+    background-color: $primary-hex;
+    outline-color: $primary-hex !important;
+    border-color: $primary-hex !important;
+    box-shadow: none !important;
+    height: 3.1rem;
+    color: white;
+    transition: opacity .5s;
+    padding: 0;
+  }
+  
+  .btn-active:hover {
+    background-color: $primary-hex;
+    color: white;
+    opacity: 0.5;
+  }
+  
+  .text-label {
+    color: $text-form;
+  }
+  
+  .input-active {
+    height: 3.1rem;
+    box-shadow:none !important;
+    outline: none !important;
+    padding-left: 1.3rem;
+  }
+  
+  .input-active:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: $primary-hex;
+  }
+  
+  ::placeholder {
+    color:#A0A3BD !important;
+  }
+  
+  .hero-progress {
+    height: 3rem !important;
+  }
+  
+  span.vertical-line {
+    left: 1.1rem;
+    top: 2.8rem;
+    width: 1.4rem;
+    height: .1rem;
+    background-color: white;
+    transform: rotate(90deg);
+  }
+}

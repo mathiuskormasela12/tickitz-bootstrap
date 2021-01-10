@@ -1,0 +1,33 @@
+// Import Font
+@import 'fonts';
+
+// Global Style
+body {
+  font-family: regular-font;
+}
+
+// Import SCSS Variable
+@import 'variable';
+
+// Import bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Import Register Page Style
+@import 'layout-register';
+@import 'media-query-register';
+
+// Import Login Page Style
+@import 'layout-login';
+@import 'media-query-login';
+
+// Import Forgot Page Style
+@import 'layout-forgot';
+@import 'media-query-forgot';
+
+// Import Home Page Style
+@import 'layout-home';
+@import 'media-query-home';
+
+// Import Movie Detail Page Style
+@import 'layout-movie-detail';
+@import 'media-query-move-details';

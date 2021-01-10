@@ -1,0 +1,11 @@
+@media screen and(max-width: 600px) {
+  div#home {
+    .title-hero-content::after {
+      content: '';
+      display: none;
+    }
+    .text-hero-foot {
+      width: 80%;
+    }
+  }
+}

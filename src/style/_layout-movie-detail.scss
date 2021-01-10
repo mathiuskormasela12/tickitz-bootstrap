@@ -1,0 +1,126 @@
+div#movie-details {
+  nav.navbar > div.container > div.collapse > ul.navbar-nav > li.nav-item {
+    color: $dark !important;
+  }
+
+  nav.navbar > div.container > div.collapse > ul.navbar-nav > li.nav-item > a.nav-link {
+    color: $dark !important;
+
+    &:hover {
+      color: $primary-hex !important;
+    }
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .explore-items {
+    font-size: .9rem;
+  }
+
+  img.img-user {
+    width: 2.5rem;
+  }
+
+  div.hero-body div.card {
+    width: 18rem;
+    height: 23rem;
+    min-width: auto !important;
+    border-radius: 16px;
+    border: 2px solid #DEDEDE !important;
+    background-color: transparent !important;
+    box-sizing: content-box !important;
+  }
+
+  .title-release {
+    color: #8692A6;
+  }
+
+  img.img-movie {
+    // width: auto;
+    // height: 19.5rem;
+    width: 12.5rem;
+  } 
+
+  .subtitle-release {
+    color: #121212;
+  }
+  .border-movie {
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #DEDEDE;
+  }
+  .synopsis {
+    color: black;
+  }
+  .synopsis-desciption {
+    color: #4E4B66;
+    line-height: 2;
+  }
+
+  .hero-content {
+    background-color: #F5F6F8;
+  }
+
+  .showtime-title {
+    color: #14142B;
+  }
+
+  // .input-field {
+  //   width: 22%;
+  // }
+
+  [type="date"] {
+    background:#fff url('../assets/images/calendar.svg') 5% 50% no-repeat ;
+  }
+
+  .form-control::-webkit-datetime-edit {
+    padding-left: 1rem;
+  }
+
+  .input-field > .form-control, .form-select {
+    padding: 1rem 2.5rem;
+    background-color: #EFF0F6;
+    border: none;
+    outline: none;
+  }
+
+  .input-field > .form-control[type=date]::-webkit-calendar-picker-indicator { 
+    background: url('../assets/images/forward.svg') no-repeat;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 37px;
+  }
+
+  .my-card {
+    border: none !important;
+    outline: none !important;
+  }
+
+  .imgs {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  .card-head-border {
+    border-bottom: 0.5px solid #DEDEDE;
+  }
+
+  .btn-card {
+    padding:0;
+    font-size: .9rem;
+    margin-bottom: .8rem;
+  }
+
+  .btn-cart {
+    font-size: .9rem;
+  }
+  
+  img.location {
+    position: absolute;
+    left: .8rem;
+    top: 1.1rem;
+    width: 1rem;
+  }
+}
