@@ -21,7 +21,7 @@ function HeroContentMovieDetails() {
                 </div>
                 <div className="col-xl-3 col-lg-4">
                   <div className="input-field position-relative">
-                    <img src={ location } className="location" />
+                    <img src={ location } className="location" alt="Location" />
                     <select className="form-select" aria-label="Default select example">
                       <option value="Jakarta">Jakarta</option>
                       <option value="Surabaya">Surabaya</option>

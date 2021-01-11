@@ -1,5 +1,4 @@
 import React from 'react';
-import hero4 from '../assets/images/heroes4.png';
 
 function HeroMovieDetailsCard(props) {
   return (
@@ -9,7 +8,7 @@ function HeroMovieDetailsCard(props) {
           <div className="card-head card-head-border pb-3">
             <div className="row align-items-center">
               <div className="col-6 d-flex justify-content-center">
-                <img src={ props.img } className="imgs" />
+                <img src={ props.img } className="imgs" alt="This from props" />
               </div>
               <div className="col-6 text-start">
                 <h5 className="fw-normal">{ props.title }</h5>

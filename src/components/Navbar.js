@@ -8,9 +8,9 @@ function Navbar() {
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img src={ tickitz } alt="Tickitz Logo" className="img-fluid" />
-          </a>
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -28,19 +28,19 @@ function Navbar() {
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item dropdown m-lg-0 ms-lg-5 ms-2">
-                <a className="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="btn nav-link dropdown-toggle text-dark" style={{ boxShadow: 'none' }} id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   Location
-                </a>
+                </button>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/">
                       Jakarta
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/">
                       Surabaya
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
