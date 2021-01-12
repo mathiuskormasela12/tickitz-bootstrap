@@ -5,6 +5,7 @@ function OrderHeader() {
   const seatNum = [1, 2, 3, 4, 5, 6, 7];
   const seatNumRight = ['8', '9', '10', '11', '12', '13', '14'];
   const seatAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+  const soldSeat = ['A2', 'C3', 'F4', 'E2', 'F1', 'G2', 'G10', 'B13', 'F8', 'G14', 'A12'];
 
   return (
     <Fragment>
@@ -31,21 +32,50 @@ function OrderHeader() {
                   <div className="container">
                     <p className="text-muted text-center">Screen</p>
                     <div className="row justify-content-center mt-4">
-                      <div className="col-lg-4 d-flex flex-wrap">
+                      <div className="col-xxl-4 col-xl-5 col-lg-6 col-md-5 col-12 d-flex flex-wrap position-relative">
                         {
                           seatAlphabet.map((row, rowIndex) => (
                             <Fragment key={ rowIndex }>
                               { seatNum.map((col, colIndex) => (
                                 <Fragment key={ colIndex }>
-                                  <input type="checkbox" id={row + '-' + col} value={row + col} />
-                                  <label htmlFor={row + '-' + col}></label>
+                                  {
+                                    (soldSeat.some((item) => item === `${row}${col}`)) ? (
+                                      <Fragment>
+                                        <input type="checkbox" id={row + '-' + col} value={row + col} disabled />
+                                        <label htmlFor={row + '-' + col} className='normal'></label>
+                                      </Fragment>
+                                    ) : (
+                                      <Fragment>
+                                        <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                        <label htmlFor={row + '-' + col} className='normal'></label>
+                                      </Fragment>
+                                    )
+                                  }
                                 </Fragment>
                               ))}
                             </Fragment>
                           ))
                         }
+                        <div className="position-absolute alphabet">
+                          {
+                            seatAlphabet.map((item, index) => (
+                              <Fragment key={ index }>
+                                <p>{ item }</p>
+                              </Fragment>
+                            ))
+                          }
+                        </div>
+                        <div className="position-absolute d-flex numeric">
+                          {
+                            seatNum.map((item, index) => (
+                              <Fragment key={ index }>
+                                <p>{ item }</p>
+                              </Fragment>
+                            ))
+                          }
+                        </div>
                       </div>
-                      <div className="col-lg-4 d-flex flex-wrap">
+                      <div className="col-xxl-4 col-xl-5 col-lg-6 col-md-5 col-12 mt-5 mt-md-0 mt-lg-0 d-flex flex-wrap position-relative">
                       {
                           seatAlphabet.map((row, rowIndex) => (
                             <Fragment key={ rowIndex }>
@@ -53,13 +83,35 @@ function OrderHeader() {
                                 <Fragment key={ colIndex }>
                                   {(row === 'F' && Number(col) === 10) ? (
                                     <Fragment>
-                                      <input type="checkbox" id={row + '-' + col} value={row + col} />
-                                      <label htmlFor={row + '-' + col} style={{ width: '3.5rem'}}></label>
+                                      {
+                                        (soldSeat.some((item) => item === `${row}${col}`)) ? (
+                                          <Fragment>
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} disabled />
+                                            <label htmlFor={row + '-' + col} style={{ width: '3.5rem'}} className="love-nest"></label>
+                                          </Fragment>
+                                        ) : (
+                                          <Fragment>
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                            <label htmlFor={row + '-' + col} style={{ width: '3.5rem'}} className="love-nest"></label>
+                                          </Fragment>
+                                        )
+                                      }
                                     </Fragment>
                                   ): (row === 'F' && Number(col) === 11) ? null: (
                                     <Fragment>
-                                      <input type="checkbox" id={row + '-' + col} value={row + col} />
-                                      <label htmlFor={row + '-' + col}></label>
+                                      {
+                                        (soldSeat.some((item) => item === `${row}${col}`)) ? (
+                                          <Fragment>
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} disabled/>
+                                            <label htmlFor={row + '-' + col} className="normal"></label>
+                                          </Fragment>
+                                        ) : (
+                                          <Fragment>
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                            <label htmlFor={row + '-' + col} className="normal"></label>
+                                          </Fragment>
+                                        )
+                                      }
                                     </Fragment>
                                   )}
                                 </Fragment>
@@ -67,6 +119,39 @@ function OrderHeader() {
                             </Fragment>
                           ))
                         }
+                        <div className="position-absolute d-flex numeric">
+                          {
+                            seatNumRight.map((item, index) => (
+                              <Fragment key={ index }>
+                                <p>{ item }</p>
+                              </Fragment>
+                            ))
+                          }
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row mt-5">
+                      <div className="col-lg-12">
+                        <h5 className="fw-normal">Seating key</h5>
+                      </div>
+                      <div className="col-lg-12 mt-3">
+                        <div className="d-lg-flex justify-content-around">
+                          <div className="d-flex align-items-center mb-3 mb-lg-0">
+                            <p className="text-muted">Available</p>
+                          </div>
+                          <div className="d-flex align-items-center mb-3 mb-lg-0">
+                            <span className="d-inline-block me-3 bg-primary box"></span>
+                            <span className="text-muted">Selected</span>
+                          </div>
+                          <div className="d-flex align-items-center mb-3 mb-lg-0">
+                            <span className="d-inline-block me-3 love-nest box"></span>
+                            <span className="text-muted">Lover Nest</span>
+                          </div>
+                          <div className="d-flex align-items-center mb-3 mb-lg-0">
+                            <span className="d-inline-block me-3 box" style={{ backgroundColor: ' #6E7191'}}></span>
+                            <span className="text-muted">Sold</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -74,7 +159,7 @@ function OrderHeader() {
               </main>
               <footer className="mt-5">
                 <div className="row no-gutter justify-content-between">
-                  <div className="col-lg-5 text-start">
+                  <div className="col-lg-5 mb-4 mb-lg-0 text-start">
                     <button type="button" className="btn btn-outline-primary btn-footer w-100">
                       Change your movie
                     </button>
