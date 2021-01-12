@@ -24,7 +24,209 @@ function OrderHeader() {
               <main className="mt-5">
                 <h3 className="fs-5 mb-4">Choose Your Seat</h3>
                 <div className="card">
-
+                  <p className="text-muted text-center">Screen</p>
+                  <div className="row no-gutter justify-content-center">
+                    <div className="col-lg-4 d-flex flex-wrap">
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                    </div>
+                    <div className="col-lg-4 d-flex flex-wrap">
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                      <input type="checkbox" id="seat" value="C4" />
+                      <label htmlFor="seat"></label>
+                    </div>
+                  </div>
                 </div>
               </main>
               <footer className="mt-5">
