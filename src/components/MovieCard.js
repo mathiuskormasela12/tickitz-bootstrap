@@ -12,7 +12,7 @@ function MovieCard(props) {
         <p className="card-subtitle text-center" style={{ color: '#A0A3BD' }}>
           { props.subtitle }
         </p>
-        <Link to="/details" className="btn btn-outline-primary mt-4">Details</Link>
+        <Link to={ `/details/${props.title}/${props.year}`} className="btn btn-outline-primary mt-4">Details</Link>
       </div>
     </React.Fragment>
   );

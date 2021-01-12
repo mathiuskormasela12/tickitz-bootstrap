@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Card from './Card';
-import hero1 from '../assets/images/heroes1.png';
-import hero2 from '../assets/images/heroes2.png';
-import hero3 from '../assets/images/heroes3.png';
-import hero4 from '../assets/images/heroes4.png';
 
 function HeroContent() {
+  const [movies, setMovies] = useState([]);
+  
+  useEffect(() => {
+    const getAllMovies = async () => {
+      try {
+        const { data: result } = await axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=a7d4f0c1&s=naruto') ;
+        setMovies(result.Search);
+      } catch(err) {
+        console.log(err);
+      }
+    }
+    getAllMovies();
+  }, []);
+
   return (
     <React.Fragment>
       <div className="hero-content bg-info py-5">
@@ -22,12 +33,9 @@ function HeroContent() {
             </div>
           </div>
           <div className="d-flex mt-5 movie-wrap">
-            <Card img={hero1} />
-            <Card img={hero2} />
-            <Card img={hero3} />
-            <Card img={hero4} />
-            <Card img={hero1} />
-            <Card img={hero2} />
+            { movies.map((item, index) => (
+              <Card img={item.Poster} key={ index } />
+            )) }
           </div>
         </div>
       </div>

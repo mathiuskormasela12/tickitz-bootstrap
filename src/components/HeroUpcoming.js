@@ -1,12 +1,23 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import MovieCard from './MovieCard';
-import hero1 from '../assets/images/heroes1.png';
-import hero2 from '../assets/images/two.png';
-import hero3 from '../assets/images/three.png';
-import hero4 from '../assets/images/one.png';
 
 function HeroUpcoming() {
+  const [movies, setMovies] = useState([]);
+  
+  useEffect(() => {
+    const getAllMovies = async () => {
+      try {
+        const { data: result } = await axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=a7d4f0c1&s=avengers') ;
+        setMovies(result.Search);
+        // console.log(result.Search)
+      } catch(err) {
+        console.log(err);
+      }
+    }
+    getAllMovies();
+  }, []);
+  // console.log(movies)
   return (
     <React.Fragment>
       <div className="hero-upcoming bg-light py-5">
@@ -38,11 +49,11 @@ function HeroUpcoming() {
             </div>
           </div>
           <div className="d-flex mt-5 movie-wrap-upcoming">
-            <MovieCard img={hero1} title="Superman" subtitle="Action, Adventure, Sci-Fi" />
-            <MovieCard img={hero2} title="The Witches" subtitle="Adventure, Comedy, Family" />
-            <MovieCard img={hero3} title="Tenet" subtitle="Action, Sci-Fi" />
-            <MovieCard img={hero4} title="Black Widow" subtitle="Action, Adventure, Sci-Fi" />
-            <MovieCard img={hero2} title="The Witches" subtitle="Adventure, Comedy, Family" />
+            { movies.map((item, index) => (
+              <React.Fragment key={index}>
+                <MovieCard img={item.Poster} title={ item.Title } subtitle={ item.Type } year={ item.Year } />
+              </React.Fragment>
+            )) }
           </div>
         </div>
       </div>

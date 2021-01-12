@@ -15,6 +15,10 @@ div#home {
     cursor: pointer;
   }
 
+  img.img-movie {
+    width: 10rem;
+  }
+
   .title-hero-content::after {
     content: '';
     display: block;

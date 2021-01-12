@@ -17,7 +17,7 @@ function Routes() {
       <Switch>
         <ShowPasswordProvider>
           <Route path="/" exact component={ Home } />
-          <Route path="/details" component={ MovieDetails } />
+          <Route path="/details/:title/:year" component={ MovieDetails } />
           <Route path="/login" component={ Login } />
           <Route path="/register" component={ Register } />
           <Route path="/forgot" component={ ForgotPassword } />
