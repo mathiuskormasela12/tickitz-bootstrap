@@ -58,22 +58,22 @@ section#order-page {
     }
 
     input[type=checkbox]:checked + label {
-      background-color: blue;
+      background-color: #5F2EEA;
     }
 
     label {
       margin-right: .5rem;
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
       width: 1.5rem;
       height: 1.5rem;
       background-color: #D6D8E7;
+      border-radius: 4px;
     }
   }
 
   footer {
     button.btn-footer {
       height: 3.5rem;
-      // width: 8re;
     }
   }
 
