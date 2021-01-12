@@ -1,0 +1,83 @@
+section#order-page {
+  display: flex;
+  background-color: #EFF0F7;
+  padding: 2rem 0;
+
+  header {
+    h3 {
+      color: #14142B;
+    }
+
+    .card {
+      padding: 0 1.4rem;
+      border-radius: 6px;
+      background-color: $light;
+      height: 6rem;
+      border: none;
+
+      &-header {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        .order-title {
+          color: black;
+        }
+  
+        button.btn-order {
+          color: #5F2EEA;
+          background-color: #EFF0F6;
+          border-radius: 6px;
+          height: 3rem;
+          width: 8.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    h3 {
+      color: #14142B;
+    }
+
+    .card {
+      padding: 0 1.4rem;
+      border-radius: 6px;
+      background-color: $light;
+      height: 6rem;
+      border: none;
+    }
+  }
+
+  footer {
+    button.btn-footer {
+      height: 3rem;
+      width: 8rem;
+    }
+  }
+
+  aside {
+    img.img-movie {
+      width: 8rem;
+    }
+    .movie-select {
+      font-size: .9rem;
+    }
+  }
+
+  aside > .card {
+    background-color: $light;
+    box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);
+    border-radius: 6px;
+    border: none;
+
+    .card-footer {
+      box-sizing: b;
+      background-color: transparent !important;
+      border-top: 1px solid #E6E6E6;
+    }
+  }
+}
