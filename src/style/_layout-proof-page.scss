@@ -1,0 +1,50 @@
+div#proof {
+  main {
+    background-color: #F5F6F8;
+
+    .container {
+      .card {
+        border: none;
+        border-radius: 8px;
+
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          left: 47.9rem;
+          top: 4rem;
+          z-index: 2;
+          border-radius: 50%;
+        }
+
+        .card-ticket {
+          height: 4rem;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        .card > .card-body > .row.bg-primary img.img-card {
+          width: 8.5rem;
+        }
+
+        .admit-text {
+          top: 1.3rem;
+          right: 3rem;
+        }
+
+        .border-body {
+          background-color: white;
+          border: 1px solid #dedede;
+        }
+
+        .head-border {
+          border-left: 2px dashed #dedede !important;
+        }
+
+        .btn-outline-proof {
+          border: 1px solid #4E4B66;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
