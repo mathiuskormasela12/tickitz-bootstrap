@@ -9,6 +9,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import MovieDetails from './pages/MovieDetails';
 import OrderPage from './pages/OrderPage';
+import PaymentPage from './pages/PaymentPage';
 
 const { ShowPasswordProvider } = Context;
 
@@ -23,6 +24,7 @@ function Routes() {
           <Route path="/register" component={ Register } />
           <Route path="/forgot" component={ ForgotPassword } />
           <Route path="/order" component={ OrderPage } />
+          <Route path="/payment" component={ PaymentPage } />
         </ShowPasswordProvider>
       </Switch>
     </BrowserRouter>
