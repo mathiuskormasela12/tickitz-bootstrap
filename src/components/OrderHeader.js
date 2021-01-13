@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import cine from '../assets/images/cine.png'
 
@@ -9,12 +9,39 @@ function OrderHeader() {
   const seatAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
   const soldSeat = ['A2', 'C3', 'F4', 'E2', 'F1', 'G2', 'G10', 'B13', 'F8', 'G14', 'A12'];
 
+  const [userSeat, setUserSeat] = useState([]);
+
   const checkout = () => {
     history.push('/payment');
   }
 
   const changeMovie = () => {
     history.push('/');
+  }
+
+  const selectSeat = e => {
+    const isSameSeat = userSeat.some(item => item === e.target.value);
+
+    if(!isSameSeat) {
+      setUserSeat(currentState => ([
+        ...currentState,
+        e.target.value
+      ]));
+    } else {
+      setUserSeat(currentState => {
+        currentState = currentState.map((item, index) => {
+          if(item === e.target.value) {
+            return '';
+          } else {
+            return item
+          }
+        });
+        return [
+          ...currentState
+        ];
+      });
+    }
+    
   }
 
   return (
@@ -56,7 +83,7 @@ function OrderHeader() {
                                       </Fragment>
                                     ) : (
                                       <Fragment>
-                                        <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                        <input type="checkbox" id={row + '-' + col} value={row + col} onChange={ selectSeat } />
                                         <label htmlFor={row + '-' + col} className='normal'></label>
                                       </Fragment>
                                     )
@@ -101,7 +128,7 @@ function OrderHeader() {
                                           </Fragment>
                                         ) : (
                                           <Fragment>
-                                            <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} onChange={ selectSeat } />
                                             <label htmlFor={row + '-' + col} style={{ width: '3.5rem'}} className="love-nest"></label>
                                           </Fragment>
                                         )
@@ -117,7 +144,7 @@ function OrderHeader() {
                                           </Fragment>
                                         ) : (
                                           <Fragment>
-                                            <input type="checkbox" id={row + '-' + col} value={row + col} />
+                                            <input type="checkbox" id={row + '-' + col} value={row + col} onChange={ selectSeat } />
                                             <label htmlFor={row + '-' + col} className="normal"></label>
                                           </Fragment>
                                         )
@@ -227,7 +254,7 @@ function OrderHeader() {
                           <p className="text-muted movie-select">Seat choosed</p>
                         </div>
                         <div className="col-6">
-                          <p className="movie-select text-end">C4, C5, C6</p>
+                          <p className="movie-select text-end">{ userSeat.join() }</p>
                         </div>
                       </div>
                     </div>
