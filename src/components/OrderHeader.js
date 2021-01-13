@@ -1,11 +1,21 @@
 import React, { Fragment } from 'react';
+import { useHistory } from 'react-router-dom';
 import cine from '../assets/images/cine.png'
 
 function OrderHeader() {
+  const history = useHistory();
   const seatNum = [1, 2, 3, 4, 5, 6, 7];
   const seatNumRight = ['8', '9', '10', '11', '12', '13', '14'];
   const seatAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
   const soldSeat = ['A2', 'C3', 'F4', 'E2', 'F1', 'G2', 'G10', 'B13', 'F8', 'G14', 'A12'];
+
+  const checkout = () => {
+    history.push('/payment');
+  }
+
+  const changeMovie = () => {
+    history.push('/');
+  }
 
   return (
     <Fragment>
@@ -160,12 +170,12 @@ function OrderHeader() {
               <footer className="mt-5">
                 <div className="row no-gutter justify-content-between">
                   <div className="col-lg-5 mb-4 mb-lg-0 text-start">
-                    <button type="button" className="btn btn-outline-primary btn-footer w-100">
+                    <button type="button" onClick={ changeMovie } className="btn btn-outline-primary btn-footer w-100">
                       Change your movie
                     </button>
                   </div>
                   <div className="col-lg-5 text-end">
-                    <button type="button" className="btn btn-primary btn-footer w-100">
+                    <button type="button" onClick={ checkout } className="btn btn-primary btn-footer w-100">
                       Checkout now
                     </button>
                   </div>

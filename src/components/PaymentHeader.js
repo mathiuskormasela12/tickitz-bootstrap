@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { useHistory } from 'react-router-dom';
 import warning from '../assets/images/warning.svg';
 import googlepay from '../assets/images/google-pay.svg';
 import bri from '../assets/images/bri.svg';
@@ -11,6 +12,15 @@ import paypal from '../assets/images/paypal.svg';
 
 
 function PaymentHeader() {
+  const history = useHistory();
+
+  const back = () => {
+    history.push('/order');
+  }
+
+  const pay = () => {
+    history.push('/proof');
+  }
 
   return (
     <Fragment>
@@ -135,12 +145,12 @@ function PaymentHeader() {
               <footer className="mt-5">
                 <div className="row no-gutter justify-content-between">
                   <div className="col-lg-5 mb-4 mb-lg-0 text-start">
-                    <button type="button" className="btn btn-outline-primary btn-footer w-100">
-                      Prvious step
+                    <button type="button" className="btn btn-outline-primary btn-footer w-100" onClick={back}>
+                      Previous step
                     </button>
                   </div>
                   <div className="col-lg-5 text-end">
-                    <button type="button" className="btn btn-primary btn-footer w-100">
+                    <button type="button" className="btn btn-primary btn-footer w-100" onClick={pay}>
                       Pay your order
                     </button>
                   </div>

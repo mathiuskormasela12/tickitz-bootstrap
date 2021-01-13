@@ -1,6 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 function HeroMovieDetailsCard(props) {
+  const history = useHistory();
+
+  const redirect = () => {
+    history.push('/order');
+  }
+
   return (
     <React.Fragment>
       <div className="col-xl-4 col-lg-6 col-md-6 mb-3">
@@ -37,7 +44,7 @@ function HeroMovieDetailsCard(props) {
             </div>
             <div className="row mt-1">
               <div className="col-6">
-                <button className="btn btn-primary px-lg-4 px-2">
+                <button className="btn btn-primary px-lg-4 px-2" onClick={ redirect }>
                   Book Now
                 </button>
               </div>
