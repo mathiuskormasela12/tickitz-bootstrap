@@ -11,6 +11,7 @@ import MovieDetails from './pages/MovieDetails';
 import OrderPage from './pages/OrderPage';
 import PaymentPage from './pages/PaymentPage';
 import ProofPayment from './pages/ProofPayment';
+import Profile from './pages/Profile';
 
 const { ShowPasswordProvider } = Context;
 
@@ -27,6 +28,7 @@ function Routes() {
           <Route path="/order" component={ OrderPage } />
           <Route path="/payment" component={ PaymentPage } />
           <Route path="/proof" component={ ProofPayment } />
+          <Route path="/profile" component={ Profile } />
         </ShowPasswordProvider>
       </Switch>
     </BrowserRouter>
