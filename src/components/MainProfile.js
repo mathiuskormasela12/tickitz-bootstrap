@@ -1,5 +1,6 @@
 // Import all modules
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Import react bootstrap
 import { 
@@ -92,6 +93,29 @@ export default function MainProfile() {
                   <OrderHistory/>
                 )
               }
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination justify-content-end">
+                  <li className="page-item">
+                    <Link className="page-link" to="/admin">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" to="/admin">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" to="/admin">
+                      3
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </Col>
           </Row>
         </Container>
